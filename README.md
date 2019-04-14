@@ -23,7 +23,7 @@ Some of the parameters need to be specified. If you wanna use this GA, change th
 ```variable_up_2```: variable\_2 higher limit  
 
 ## Usage
-Folow next step, to use this GA for your problems:
+Folow next step, to use this GA for your situation:
 ```
 apt -y install gcc <=> yum -y install gcc
 git clone https://github.com/frnorth/GA-self.git ~/GA-self
@@ -35,4 +35,4 @@ make clean
 Executable file ```mysga``` would read the sga.conf, and get the parametes in, then start the evolution.
 
 ## Result
-Evolution.txt list the best individual in each generation, and in the end is the global best individuals, which is the result we want.  
+The best individual in each generation would be list in ```evolution.txt```, and the global best individuals would be in the end, which is the result we want.  
