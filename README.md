@@ -17,10 +17,10 @@ Some of the parameters need to be specified. If you wanna use this GA, change th
 ```chrom_length```: each variable correspond with size of 20 int arrays    
 ```crossover_prob```: crossover probability  
 ```mutation_prob```: mutation probability  
-```variable_down_1```: variable\_1, x here, lower limit
-```variable_up_1```: variable\_1 higher limit
-```variable_down_2```: variable\_2, y here, lower limit
-```variable_up_2```: variable\_2 higher limit
+```variable_down_1```: variable\_1, x here, lower limit  
+```variable_up_1```: variable\_1 higher limit  
+```variable_down_2```: variable\_2, y here, lower limit  
+```variable_up_2```: variable\_2 higher limit  
 
 ## Usage
 Folow next step, to use this GA for your problems:
@@ -32,6 +32,7 @@ make
 make clean
 ./mysga
 ```
+Executable file ```mysga``` would read the sga.conf, and get the parametes in, then start the evolution.
 
 ## Result
- 
+Evolution.txt list the best individual in each generation, and in the end is the global best individuals, which is the result we want.  
