@@ -2,6 +2,8 @@
 
 This repositry is an compact example of self-built GA(genetic algorithm), which could be used to find out global maximum of function ShafferF6:
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+
 $$0.5 - \frac{(\sin((x^2 + y^2)^0.5))^2.0-0.5}{(1.0 + 0.001*(x^2+y^2)^2.0)}$$
 
 
