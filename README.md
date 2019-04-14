@@ -9,8 +9,8 @@ There is only one max point in ShafferF6 functional image site in (0.0), around 
 
 ## Configure
 parameters of GA was in sga.conf:  
-```pop_size```: total amount of individuals use in evolution
-generation_num      200
+这是<label style="color:red">红色</label>字体: total amount of individuals use in evolution  
+```generation_num```:      200
 variable_num        2
 chrom_length        60
 crossover_prob      0.5
