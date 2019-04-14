@@ -8,15 +8,17 @@ This repositry is an compact example of self-built GA(genetic algorithm), which 
 There is only one max point in ShafferF6 functional image site in (0.0), around which locate a loop of ridge. Finding of the max point will be easily got stack in the ridge. So this function is a good example to test whether slef-built GA can work correctly.
 
 ## Configure
-parameters of GA was in sga.conf:  
-这是<label style="color:red">红色</label>字体: total amount of individuals use in evolution  
-```generation_num```:      200
-variable_num        2
-chrom_length        60
-crossover_prob      0.5
-mutation_prob       0.02
-variable_down_1     -100    variable_up_1       100
-variable_down_2     -100    variable_up_2       100
+Some of the parameters need to be specified. If you wanna use this GA, change the numbers in <font face=#00008B>sga.conf</font>:  
+<font face=#00008B>pop\_size</font>: total amount of individuals use in evolution  
+<font face=#00008B>generation\_num</font>: generations of the evolution  
+<font face=#00008B>variable\_num</font>: numbers of variable used in functionals, here is 2, x and y  
+<font face=#00008B>chrom\_length</font>: each variable correspond with size of 20 int arrays    
+<font face=#00008B>crossover\_prob</font>: crossover probability  
+<font face=#00008B>mutation\_prob</font>: mutation probability  
+<font face=#00008B>variable\_down\_1</font>: variable\_1, x here, lower limit
+<font face=#00008B>variable\_up\_1</font>: variable\_1 higher limit
+<font face=#00008B>variable\_down\_2</font>: variable\_2, y here, lower limit
+<font face=#00008B>variable\_up\_2</font>: variable\_2 higher limit
 
 ./mysga 
 
