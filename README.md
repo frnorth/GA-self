@@ -37,9 +37,15 @@ make
 make clean
 ./mysga
 ```
-Executable file ```mysga``` would read the```sga.conf```, and get the parametes in, then start the evolution.  
-> 可执行文件```mysga```会读取```sga.conf```文件中的参数, 而后开始遗传进化计算.  
+Executable file ```mysga``` would read the ```sga.conf```, and get the parameters in, then start the evolution.  
+> 可执行文件 ```mysga``` 会读取 ```sga.conf``` 文件中的参数, 而后开始遗传进化计算.  
 
 ## Result
 The best individual in each generation would be list in ```evolution.txt```, and the global best individual would be in the end, which is the result we want.  
-> ```evolution.txt```列出了每一代的最优个体, 并在后列出了全局最优的个体, 而全局最优的个体就是我们想要的.  
+> ```evolution.txt``` 列出了每一代的最优个体, 并在后列出了全局最优的个体, 而全局最优的个体就是我们想要的.  
+
+## Note
+1. From the instruction of ```evolution.txt```, the individuals possessing execllent fitness(not retained in the ridge) will not live long, only appear in a few generation. The maximum calculated would be fall into 0.99028 finally.  
+> 从 ```evolution.txt``` 中可以看到, 拥有特别优秀的属性的个体并没有存活的很长久, 最大值最终还是会回到0.99028.  
+2. Coding chromosome by floating type, eoptimizing of the evolution, elitism, et al were not implemented.  
+> 浮点型编码, 遗传操作优化, 精英主义等都没应用到这里.  
