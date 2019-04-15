@@ -15,26 +15,16 @@ ShafferF6h函数只有一个全局最大值 1, 坐标为(0.0), 但是其周围�
 ## Configure
 Some of the parameters need to be specified. If you wanna use this GA, change the numbers in ```sga.conf```:  
 一些参数要指明, 这些都放在了```sga.conf```中, 如果你想使用这个仓库, 可以将参数后面的数值替换.  
-```pop_size```: total amount of individuals use in evolution   
-                人口数
-```generation_num```: generations of the evolution  
-                      遗传代数  
-```variable_num```: numbers of variable used in functionals, here is 2, x and y  
-                    变量数, 这里是2  
-```chrom_length```: total length of the chromosome, 40 here means: each variable correspond with size of 20 int arrays   
-                    染色体总长度, 这里是40, 对应每个变量占20  
-```crossover_prob```: crossover probability  
-                      交叉概率  
-```mutation_prob```: mutation probability  
-                     变异概率  
-```variable_down_1```: variable\_1, x here, lower limit  
-                       变量1下限  
-```variable_up_1```: variable\_1 higher limit  
-                       变量1上限  
-```variable_down_2```: variable\_2, y here, lower limit  
-                       变量2下限  
-```variable_up_2```: variable\_2 higher limit  
-                       变量2上限  
+```pop_size```: total amount of individuals use in evolution 人口数  
+```generation_num```: generations of the evolution 遗传代数  
+```variable_num```: numbers of variable used in functionals, here is 2, x and y 变量数, 这里是2  
+```chrom_length```: total length of the chromosome, 40 here means: each variable correspond with size of 20 int arrays 染色体总长度, 这里是40, 对应每个变量占20  
+```crossover_prob```: crossover probability 交叉概率  
+```mutation_prob```: mutation probability 变异概率  
+```variable_down_1```: variable\_1, x here, lower limit 变量1下限  
+```variable_up_1```: variable\_1 higher limit 变量1上限  
+```variable_down_2```: variable\_2, y here, lower limit 变量2下限  
+```variable_up_2```: variable\_2 higher limit 变量2上限  
 
 ## Usage
 Folow next step, to use this GA for your situation:
