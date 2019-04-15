@@ -6,24 +6,33 @@ This repositry is an compact example of self-built GA(genetic algorithm) with ch
 <a href="https://www.codecogs.com/eqnedit.php?latex=$$0.5&space;-&space;\frac{\sin^2(\sqrt{x^2&space;&plus;&space;y^2})-0.5}{(1.0&space;&plus;&space;0.001(x^2&plus;y^2))^2}$$" target="_blank"><img src="https://latex.codecogs.com/gif.latex?$$0.5&space;-&space;\frac{\sin^2(\sqrt{x^2&space;&plus;&space;y^2})-0.5}{(1.0&space;&plus;&space;0.001(x^2&plus;y^2))^2}$$" title="$$0.5 - \frac{\sin^2(\sqrt{x^2 + y^2})-0.5}{(1.0 + 0.001(x^2+y^2))^2}$$" /></a>
 
 Well, principle of GA would not be list here, you can get the idea from the code in ./src/.  
-这里就不再多说遗传算发的原理了, 不过可以通过./src/下面的代码了解之.  
+> 这里就不再多说遗传算发的原理了, 不过可以通过./src/下面的代码了解之.  
 
 ## ShafferF6
 There is only one global maximum point in ShafferF6 functional image site in (0.0), the value of which is +1. Around the maximum point locate a loop of ridge with equal altitude, the value of which is approximate to 0.99028. Finding of the max point will be easily retained at the ridge. So this function is a good example to test whether slef-built GA can work correctly.
-ShafferF6h函数只有一个全局最大值 1, 坐标为(0.0), 但是其周围有一圈值为0.99028的登高山脊. 我们在寻找其最大值得时侯, 容易被滞留在大山里. 正如此, 自己构建的遗传算法是否能很好的工作, 可以用Shaffer函数来检测.  
+> ShafferF6h函数只有一个全局最大值 1, 坐标为(0.0), 但是其周围有一圈值为0.99028的登高山脊. 我们在寻找其最大值得时侯, 容易被滞留在大山里. 正如此, 自己构建的遗传算法是否能很好的工作, 可以用Shaffer函数来检测.  
 
 ## Configure
 Some of the parameters need to be specified. If you wanna use this GA, change the numbers in ```sga.conf```:  
-一些参数要指明, 这些都放在了```sga.conf```中, 如果你想使用这个仓库, 可以将参数后面的数值替换.  
-```pop_size```: total amount of individuals use in evolution 人口数  
-```generation_num```: generations of the evolution 遗传代数  
-```variable_num```: numbers of variable used in functionals, here is 2, x and y 变量数, 这里是2  
-```chrom_length```: total length of the chromosome, 40 here means: each variable correspond with size of 20 int arrays 染色体总长度, 这里是40, 对应每个变量占20  
-```crossover_prob```: crossover probability 交叉概率  
-```mutation_prob```: mutation probability 变异概率  
-```variable_down_1```: variable\_1, x here, lower limit 变量1下限  
-```variable_up_1```: variable\_1 higher limit 变量1上限  
-```variable_down_2```: variable\_2, y here, lower limit 变量2下限  
+> 一些参数要指明, 这些都放在了```sga.conf```中, 如果你想使用这个仓库, 可以将参数后面的数值替换.  
+```pop_size```:  
+> total amount of individuals use in evolution 人口数  
+```generation_num```:  
+> generations of the evolution 遗传代数  
+```variable_num```:  
+> numbers of variable used in functionals, here is 2, x and y 变量数, 这里是2  
+```chrom_length```:  
+> total length of the chromosome, 40 here means: each variable correspond with size of 20 int arrays 染色体总长度, 这里是40, 对应每个变量占20   
+```crossover_prob```:  
+> crossover probability 交叉概率   
+```mutation_prob```:  
+> mutation probability 变异概率  
+```variable_down_1```:  
+> variable\_1, x here, lower limit 变量1下限  
+```variable_up_1```:  
+> variable\_1 higher limit 变量1上限  
+```variable_down_2```:  
+> variable\_2, y here, lower limit 变量2下限  
 ```variable_up_2```: variable\_2 higher limit 变量2上限  
 
 ## Usage
