@@ -9,7 +9,7 @@ Well, principle of GA would not be list here, you can get the idea from the code
 > 这里就不再多说遗传算发的原理了, 不过可以通过./src/下面的代码了解之.  
 
 ## ShafferF6
-There is only one global maximum point in ShafferF6 functional image site in (0.0), the value of which is +1. Around the maximum point locate a loop of ridge with equal altitude, the value of which is approximate to 0.99028. Finding of the max point will be easily retained at the ridge. So this function is a good example to test whether slef-built GA can work correctly.  
+There is only one global maximum point in ShafferF6 functional image site in (0.0), the value of which is +1. Around the maximum point locate a loop of ridge with equal altitude, the value of which is approximate to 0.99028. Finding of the max point will be easily retained at the ridge. So this function is a good example to test whether self-built GA can work correctly.  
 > ShafferF6h函数只有一个全局最大值 1, 坐标为(0.0), 但是其周围有一圈值为0.99028的登高山脊. 我们在寻找其最大值得时侯, 容易被滞留在大山里. 正如此, 自己构建的遗传算法是否能很好的工作, 可以用Shaffer函数来检测.  
 
 ## Configure
